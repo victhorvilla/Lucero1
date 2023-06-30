@@ -105,6 +105,5 @@ class UsuariosModel extends Mysql{
         $resul = $this->update($query, $data);
         return $resul;
     }
-    
 }
 ?>

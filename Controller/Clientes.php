@@ -11,7 +11,7 @@
         }
         public function Listar()
         {
-            $data = $this->model->selectClientes();         
+            $data = $this->model->selectClientes();
             $this->views->getView($this, "Listar", $data, "");
         }
     public function eliminados()

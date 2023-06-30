@@ -119,7 +119,6 @@ class VentasModel extends Mysql{
         $this->precio = $precio;
         $this->id_usuario = $id_usuario;
         $this->nombre = $nombre;
-
         $query = "INSERT INTO detalle_venta(id_venta,producto,id_producto ,cantidad, precio,id_usuario) VALUES (?,?,?,?,?,?)";
         $data = array($this->id_venta,$this->nombre, $this->id_producto, $this->cantidad, $this->precio, $this->id_usuario);
         $resul = $this->insert($query, $data);

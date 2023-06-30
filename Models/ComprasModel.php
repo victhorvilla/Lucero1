@@ -26,7 +26,6 @@ class ComprasModel extends Mysql{
         $this->total = $total;
         $this->id_producto = $id_producto;
         $this->id_usuario = $id_usuario;
-
             $query = "INSERT INTO detalle_temp(nombre, cantidad, precio, total, id_producto ,id_usuario) VALUES (?,?,?,?,?,?)";
             $data = array($this->nombre,$this->cantidad, $this->precio, $this->total,$this->id_producto,$this->id_usuario);
             $resul = $this->insert($query, $data);

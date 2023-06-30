@@ -8,7 +8,6 @@
             header("location: " . base_url());
         }
             parent::__construct();
-
         }
         public function Listar()
         {        

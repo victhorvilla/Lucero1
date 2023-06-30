@@ -52,9 +52,9 @@
             echo "<tr>
                 <td>".$compras['id']."</td>
                 <td>".$compras['nombre']."</td>
-                <td>" . $compras['cantidad'] . "</td>
-                <td>" . $compras['precio'] . "</td>
-                <td>" . $compras['total'] . "</td>
+                <td>".$compras['cantidad']."</td>
+                <td>".$compras['precio']."</td>
+                <td>".$compras['total']."</td>
                 <td>
                 <button type='button' data-id='" . $compras['id'] . "' class='btn btn-danger eliminar'>Eliminar</button>
                 </td>

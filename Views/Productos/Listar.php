@@ -82,17 +82,17 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="codigo">Código</label>
-                        <input id="codigo" class="form-control" type="text" name="codigo" placeholder="Código">
+                        <input id="codigo" class="form-control" type="text" name="codigo" required minlength="5" maxlength="5"  pattern="[1-2]{1}[0-2]{1}[1-2]{1}[0-2]{1}[1-2]{1}" placeholder="Código">
                     </div>
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
-                        <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Descripción">
+                        <input id="nombre" class="form-control" type="text" name="nombre" required minlength="5" maxlength="50"  pattern="[A-Z, 0-9]{5,50}" placeholder="Descripción">
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="precio">Precio</label>
-                                <input id="precio" class="form-control" type="text" name="precio" placeholder="Precio">
+                                <input id="precio" class="form-control" type="text" name="precio" required placeholder="Precio">
                             </div>
                         </div>
                     </div>

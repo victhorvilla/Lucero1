@@ -40,5 +40,4 @@ class AdminModel extends Mysql{
         $res = $this->selecT($sql);
         return $res;
     }
-   
 }

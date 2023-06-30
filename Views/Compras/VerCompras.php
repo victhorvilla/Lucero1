@@ -5,7 +5,7 @@ $pdf = new FPDF('P', 'mm', array(105, 148));
 $pdf->AddPage();
 $pdf->setFont('Arial', 'B', 14);
 $pdf->setTitle("Reporte de Compra");
-$pdf->image(base_url().'Assets/img/logo.jpg', 70, 5, 30, 30, 'JPG');
+$pdf->image(base_url().'Assets/img/LogoDL.png', 70, 5, 30, 30, 'PNG');
 $pdf->setFont('Arial', 'B', 10);
 $pdf->Cell(50, 5, utf8_decode($alert['nombre']), 0, 1, 'L');
 $pdf->Cell(20, 5, utf8_decode("Ruc"), 0, 0, 'L');

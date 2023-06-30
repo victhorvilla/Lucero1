@@ -35,7 +35,6 @@ class Usuarios extends Controllers
                 $alert = 'error';
             }
         }
-
         $data = $this->model->selectUsuarios();
         header("location: " . base_url() . "Usuarios/Listar?msg=$alert");
         die();

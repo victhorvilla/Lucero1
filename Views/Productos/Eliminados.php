@@ -21,7 +21,7 @@
                                     <th>Precio</th>
                                     <th>Acciones</th>
                                 </tr>
-                            </thead>
+                            </thead>                         
                             <tbody>
                                 <?php foreach ($data as $pro) { ?>
                                     <tr>

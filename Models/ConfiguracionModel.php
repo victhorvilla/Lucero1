@@ -24,7 +24,7 @@ class ConfiguracionModel extends Mysql{
         $data = array($this->ruc, $this->nombre, $this->telefono, $this->direccion, $this->razon ,$this->id);
         $resul = $this->update($query, $data);
         $return = $resul;
-        return $return;
+        return $return;       
     }
 }
 ?>

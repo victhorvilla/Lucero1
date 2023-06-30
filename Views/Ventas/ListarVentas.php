@@ -21,6 +21,7 @@
                                     <th>Accion</th>
                                 </tr>
                             </thead>
+                            
                             <tbody>
                                 <?php foreach ($data as $lista) { ?>
                                     <tr>

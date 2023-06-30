@@ -13,19 +13,19 @@
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
                                 <input id="id" type="hidden" name="id" value="<?php echo $data['id']; ?>">
-                                <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre" value="<?php echo $data['nombre']; ?>">
+                                <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre" required minlength="5" maxlength="50"  pattern="[A-Z, ]{5,50}" value="<?php echo $data['nombre']; ?>">
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="usuario">Usuario</label>
-                                        <input id="usuario" class="form-control" type="text" name="usuario" placeholder="Usuario" value="<?php echo $data['usuario']; ?>">
+                                        <input id="usuario" class="form-control" type="text" name="usuario" placeholder="Usuario" required minlength="3" maxlength="20"  pattern="[A-Z, ]{5,50}" value="<?php echo $data['usuario']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="correo">Correo</label>
-                                        <input id="correo" class="form-control" type="text" name="correo" placeholder="Correo" value="<?php echo $data['correo']; ?>">
+                                        <input id="correo" class="form-control" type="email" name="correo" placeholder="Correo" required minlength="5" maxlength="50"  pattern=".+@gmail\.com" value="<?php echo $data['correo']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">

@@ -35,7 +35,6 @@
             } else {
                 $data['error'] = "El usuario no existe";
                 print_r($data);
-                //$this->views->getView($this, "home");
             }
        }
     }

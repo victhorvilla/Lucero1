@@ -1,8 +1,7 @@
 const base = document.getElementById("url").value;
 const urls = base + "Compras/ingresar";
 window.addEventListener("load", function () {
-    //reportes();
-    //reportesTorta();
+
     ListarCompras();
 })
 $(document).ready(function () {

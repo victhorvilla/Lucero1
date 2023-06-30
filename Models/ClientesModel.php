@@ -39,6 +39,7 @@ class ClientesModel extends Mysql{
             $resul = $this->insert($query, $data);
             $return = $resul;
         }else {
+            
             $return = "existe";
         }
         return $return;

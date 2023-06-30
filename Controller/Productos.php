@@ -77,7 +77,6 @@ class Productos extends Controllers
         $this->model->reingresarProductos($id);
         $data = $this->model->selectProductos();
         header('location: ' . base_url() . 'Productos/Listar');
-        //$this->views->getView($this, "Listar", $data);
         die();
     }
 }

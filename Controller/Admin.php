@@ -11,7 +11,6 @@
 
         }
         public function Listar()
-
         {
             $prod = $this->model->productos();
             $cli = $this->model->clientes();

@@ -13,8 +13,8 @@
                     <div class="form-group">
                         <label for="buscar_codigo"><i class="fas fa-barcode"></i> Código de producto</label>
                         <input type="hidden" id="id" name="id">
-                        <input id="buscar_codigo" onkeyup="BuscarCodigo(event);" class="form-control" type="text" name="codigo" placeholder="Código de producto">
-                        <span class="text-danger d-none" id="error"><i class="fas fa-ad"></i> No hay producto</span>
+                        <input id="buscar_codigo" onkeyup="BuscarCodigo(event);" class="form-control" type="text" name="codigo" required minlength="5" maxlength="5"  pattern="[1-2]{1}[0-2]{1}[1-2]{1}[0-2]{1}[1-2]{1}" placeholder="Código de producto">
+                        <span class="text-danger d-none" id="error"><i class="fas fa-ad"></i> ¡Código Incorrecto! Vuelva a ingresar</span>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -28,7 +28,8 @@
                 <div class="col-lg-2">
                     <div class="form-group">
                         <label for="cantidad">Cantidad</label>
-                        <input id="cantidad" class="form-control" type="text" name="cantidad" onkeyup="IngresarCantidad(event);">
+                        <input id="cantidad" class="form-control" type="text" name="cantidad" required pattern="[1-500]" onkeyup="IngresarCantidad(event);">
+                        <span class="text-danger d-none" id="error"><i class="fas fa-ad"></i> ¡Cantidad erronea! Vuelva a ingresar</span>
                     </div>
                 </div>
                 <div class="col-lg-3">

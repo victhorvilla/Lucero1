@@ -22,6 +22,7 @@
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
+                            
                             <tbody>
                                 <?php foreach ($data as $us) { ?>
                                     <tr>

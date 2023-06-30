@@ -11,10 +11,10 @@
             <form action="" method="post" id="frmCompras" class="row" autocomplete="off">
                 <div class="col-lg-3">
                     <div class="form-group">
-                        <label for="buscar_codigo">Cógigo de producto</label>
+                        <label for="buscar_codigo">Código de producto</label>
                         <input type="hidden" id="id" name="id">
-                        <input id="buscar_codigo" onkeyup="BuscarCodigo(event);" class="form-control" type="text" name="codigo" placeholder="Código de producto">
-                        <span class="text-danger d-none" id="error">No hay producto</span>
+                        <input id="buscar_codigo" onkeyup="BuscarCodigo(event);" class="form-control" type="text" name="codigo" required minlength="5" maxlength="5"  pattern="[1-2]{1}[0-2]{1}[1-2]{1}[0-2]{1}[1-2]{1}" placeholder="Código de producto">
+                        <span class="text-danger d-none" id="error">¡Código Incorrecto! Vuelva a ingresar</span>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -29,7 +29,7 @@
                     <div class="form-group">
                         <label for="cantidad">Cantidad</label>
                         <input id="stockD" type="hidden">
-                        <input id="cantidad" class="form-control" type="text" name="cantidad" onkeyup="IngresarCantidad(event);">
+                        <input id="cantidad" class="form-control" type="text" name="cantidad" required pattern="[1-500]" onkeyup="IngresarCantidad(event);">
                     </div>
                 </div>
                 <div class="col-lg-3">

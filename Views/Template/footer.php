@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <!-- JavaScript files-->
+        
         <script src="<?php echo base_url(); ?>Assets/js/jquery.min.js"></script>
         <script src="<?php echo base_url(); ?>Assets/js/bootstrap.bundle.min.js"></script>
         <script src="<?php echo base_url(); ?>Assets/js/Funciones.js"></script>

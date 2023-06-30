@@ -79,5 +79,6 @@ class ProductosModel extends Mysql{
         $return = $resul;
         return $return;
     }
+    
 }
 ?>

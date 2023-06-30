@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col-lg-6 mb-2">
                             <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#nuevo_cliente">Nuevo</button>
-                            <a href="<?php echo base_url(); ?>/Usuarios/eliminados" class="btn btn-danger">Inactivos</a>
+                            <a href="<?php echo base_url(); ?>/Usuarios/eliminados" class="btn btn-danger"><i class="fas fa-user-slash"></i>Inactivos</a>
                         </div>
                         <div class="col-lg-6">
                             <?php if (isset($_GET['msg'])) {
@@ -86,19 +86,19 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
-                        <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre">
+                        <input id="nombre" class="form-control" type="text" name="nombre" required minlength="5" maxlength="50"  pattern="[A-Z, ]{5,50}" placeholder="Nombre">
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="usuario">Usuario</label>
-                                <input id="usuario" class="form-control" type="text" name="usuario" placeholder="Usuario">
+                                <input id="usuario" class="form-control" type="text" name="usuario" required minlength="3" maxlength="20"  pattern="[A-Z, ]{5,50}" placeholder="Usuario">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="correo">Correo</label>
-                                <input id="correo" class="form-control" type="text" name="correo" placeholder="Correo">
+                                <input id="correo" class="form-control" type="text" name="correo" required minlength="5" maxlength="50"  pattern=".+@gmail\.com" placeholder="Correo">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -109,7 +109,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="confirmar">Correo</label>
+                                <label for="confirmar">Confirmar Contraseña</label>
                                 <input id="confirmar" class="form-control" type="password" name="confirmar" placeholder="Confirmar Contraseña">
                             </div>
                         </div>

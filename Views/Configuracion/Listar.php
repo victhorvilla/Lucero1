@@ -14,7 +14,7 @@
                         <?php if (isset($alert['mensaje'])) {
                             if ($alert['mensaje'] == "modificado") { ?>
                                 <div class="alert alert-primary" role="alert">
-                                    <strong>Datos Modificado</strong>
+                                    <strong>Datos Modificados</strong>
                                 </div>
                             <?php } else { ?>
                                 <div class="alert alert-danger" role="alert">

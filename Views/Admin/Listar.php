@@ -4,7 +4,7 @@
 <div class="page-content bg-light">
     <div class="page-header bg-light">
         <div class="container-fluid">
-            <h2 class="h5 no-margin-bottom"><center>PÁGINA PRINCIPAL<center></h2>
+            <h2 class="h5 no-margin-bottom"><center><b>PÁGINA PRINCIPAL</b><center></h2>
         </div>
     </div>
     <section class="no-padding-bottom">
@@ -12,7 +12,7 @@
             <div class="row">
 
                 <!-- Earnings (Monthly) Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
+               <div class="col-xl-3 col-md-6 mb-4">
                     <div class="card border-0 bg-success shadow h-100 py-2">
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">

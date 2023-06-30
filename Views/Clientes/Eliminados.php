@@ -15,7 +15,7 @@
                             <thead class="thead-dark">
                                 <tr>
                                     <th>Id</th>
-                                    <th>Ruc/Dni</th>
+                                    <th>Ruc</th>
                                     <th>Nombre</th>
                                     <th>Dirección</th>
                                     <th>Teléfono</th>
@@ -32,7 +32,7 @@
                                         <td><?php echo $cl['telefono']; ?></td>
                                         <td>
                                             <form action="<?php echo base_url() ?>Clientes/reingresar?id=<?php echo $cl['id']; ?>" method="post" class="d-inline confirmar">
-                                                <button type="submit" class="btn btn-success"><i class="fas fa-ad"></i></button>
+                                                <button type="submit" class="btn btn-primary">Reingresar</button>
                                             </form>
                                         </td>
                                     </tr>
